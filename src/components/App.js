@@ -12,7 +12,7 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
 
-        <input type="text" placeholder="Enter input" value="{txt}" onchange="enter"/>
+        <input type="text" placeholder="Enter your name:" value="{txt}" onchange="enter"/>
         <div>Hello {txt}!
         </div>
        
