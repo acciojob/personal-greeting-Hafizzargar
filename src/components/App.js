@@ -11,8 +11,9 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
+         <p>Enter your name:</p>
 
-        <input type="text" placeholder="Enter your name:" value="{txt}" onchange="enter"/>
+        <input type="text" value="{txt}" onchange="enter"/>
        
         {name && <h1>Hello {name}!</h1>}
 
