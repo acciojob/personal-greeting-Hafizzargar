@@ -7,9 +7,9 @@ const App = () => {
    const [name, setName] = useState("");
     return(
             <div>
-                  <label htmlFor="name">Enter your name:</label>
+                  <label htmlFor="nam">Enter your name:</label>
                  // <input value={name} type="text" onChange={(e)=>setName(e.target.value)} onMouseLeave={(e)=>setName("")}/>
-                  <input type="text" onChange={(e) => setName(e.target.value)} value={name} id="name"/>      
+                  <input type="text" onChange={(e) => setName(e.target.value)} value={name} id="nam"/>      
 
                   {
                      name && <p>Hello {name}!</p>
