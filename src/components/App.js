@@ -4,25 +4,14 @@ import './../styles/App.css';
 import { useState } from "react";
 
 const App = () => {
-  let [txt,settxt]=useState("");
-  function enter(e){
-    return settxt(e.target.value);
-
-  }
-  return (
-    <div>
-        {/* Do not remove the main div */}
-         <label htmlFor="ne">Enter your name:</label>
-
-        <input type="text" onChange="enter" id="ne" value={txt}/>
-       
-        <p>Hello {txt}!</p>
-
-
-
-
-    </div>
-  )
+   let[name, setName] = useState("");
+    return(
+            <div>
+                <p>Enter your name :</p> 
+                <input type="text" onChange={(e)=>setName("Hello " + e.target.value +"!")}/>
+                <p>{name}</p>
+            </div>
+        );
 }
 
 export default App
