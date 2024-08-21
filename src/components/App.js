@@ -13,7 +13,7 @@ const App = () => {
         {/* Do not remove the main div */}
          <p>Enter your name:</p>
 
-        <input type="text" value="{txt}" onchange="enter"/>
+        <input type="text" onchange="enter"/>
        
         {name && ( <p>Hello {name}!</p>)}
 
