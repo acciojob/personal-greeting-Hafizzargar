@@ -16,7 +16,7 @@ const App = () => {
 
         <input type="text" onChange="enter" id="ne" value={txt}/>
        
-        {name && ( <p>Hello {txt}!</p>)}
+        {txt &&  <p>Hello {txt}!</p>}
 
 
 
