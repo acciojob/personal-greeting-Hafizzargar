@@ -11,9 +11,9 @@ const App = () => {
                  // <input value={name} type="text" onChange={(e)=>setName(e.target.value)} onMouseLeave={(e)=>setName("")}/>
                   <input type="text" onChange={(e) => setName(e.target.value)} value={name} id="nam"/>      
 
-                  {
-                     name && <p>Hello {name}!</p>
-                  }
+                  
+                     <p>{text && text.length>0?"Hello "+ text+"!":""}</p>
+                  
                 
             </div>
         );
