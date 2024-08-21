@@ -11,7 +11,7 @@ const App = () => {
                 <input type="text" onChange={(e)=>setName(e.target.value)}/>
                 <p>
                   {
-                    name==false?null:<p>Hello {name}!</p>
+                    name.trim()==false?null:<p>Hello {name}!</p>
                   }
                 </p>
             </div>
