@@ -9,11 +9,11 @@ const App = () => {
             <div>
                  <p>Enter your name:</p> 
                 <input type="text" onChange={(e)=>setName(e.target.value)}/>
-                <p>
+                
                   {
                     name.trim()==false?null:<p>Hello {name}!</p>
                   }
-                </p>
+                
             </div>
         );
 }
