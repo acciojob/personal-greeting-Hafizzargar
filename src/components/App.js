@@ -9,9 +9,7 @@ const App = () => {
             <div>
                  <p>Enter your name:</p> 
                  // <input value={name} type="text" onChange={(e)=>setName(e.target.value)} onMouseLeave={(e)=>setName("")}/>
-                         {
-            name.trim() && <p>Hello {name}!</p>
-         }
+                  <input type="text" onChange={(e) => setName(e.target.value)} value={name}/>      
 
                   {
                      name && <p>Hello {name}!</p>
