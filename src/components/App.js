@@ -16,7 +16,7 @@ const App = () => {
 
         <input type="text" onChange="enter" id="ne" value={txt}/>
        
-        {txt.trim()==true &&  <p>Hello {txt}!</p>}
+        <p>Hello {txt}!</p>
 
 
 
