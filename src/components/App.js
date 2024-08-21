@@ -8,10 +8,10 @@ const App = () => {
     return(
             <div>
                  <p>Enter your name:</p> 
-                <input type="text" onChange={(e)=>setName(e.target.value)}/>
+                 <input value={name} type="text" onChange={(e)=>setName(e.target.value)} onMouseLeave={(e)=>setName("")}/>
                 
                   {
-                     name.trim() && <p>Hello {name}!</p>
+                     name && <p>Hello {name}!</p>
                   }
                 
             </div>
